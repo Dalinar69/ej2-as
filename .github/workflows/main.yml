@@ -1,0 +1,14 @@
+name: Workflow
+
+on: push
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    permissions:
+       security-events: write
+    steps:
+      - name: Code quality
+        uses: advanced-security/python-lint-code-scanning-action@v1
+        with:
+          linter: pylint
