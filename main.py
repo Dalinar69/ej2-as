@@ -1,4 +1,7 @@
-def suma(a,b)
+def suma(a,b):
+  """
+  Funcion que suma dos variables
+  """
   return a+b
 a = 3
 b = 5
